@@ -7,7 +7,7 @@ cp ../bar.png dir1/
 git add .
 git write-tree | xargs git commit-tree -m "manual commit creating" | xargs git update-ref HEAD
 
-#add readme and this script, then push all cahnges to github 
+#add readme and this script, then push all changes to github 
 git remote add origin git@github.com:Yankovsky/git-manual-commit.git
 cp ../git-manual-commit.sh .
 echo see solution in git-manual-commit.sh script > README.md
